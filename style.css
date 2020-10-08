@@ -1,0 +1,137 @@
+/* Body Text */
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Spacing */
+.space{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Header */
+header{
+    background: #b2b2b2;
+    color: white;
+    padding-top: 30px;
+    min-width: 70px;
+    border-bottom: #ffef96 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #logo{
+    float: left;
+}
+header #logo h1{
+    margin: 0;
+    color: #50394c;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+/* Exposition */
+
+#exposition{
+    min-height: 400px;
+    text-align: center;
+    font-size: xx-large;
+}
+#exposition p{
+    font-size: x-large;
+}
+#email{
+    padding: 15px;
+    color: white;
+    background: #b2b2b2;
+}
+#email h6{
+    float: left;
+}
+#email form{
+    float: right;
+    margin-top: 15px;
+}
+#email input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button{
+    height: 38px;
+    background: #50394c;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+/* Bogo */
+#bogo{
+    margin-top: 20px;
+}
+#bogo .games{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#bogo .games img{
+    width: 90px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: #b2b2b2;
+    text-align: center;
+}
+/* Media Queries */
+@media(max-width: 800px){
+    header #logo,
+    header nav,
+    header nav li,
+    #email h6,
+    #email form,
+    #bogo .games{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #exposition h1{
+        margin-top: 40px;
+    }
+    #email button{
+        display: block;
+        width: 100%;
+    }
+    #email form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
